@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,7000,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth; /*untuk internal link 'scroll'*/
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+/* body.dark-mode{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: rgb(70, 70, 70);
+} */
+
+header{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    position: sticky;
+}
+
+header .portofolio{
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+.portofolio:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+    font-size: 1em;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: black;
+    border-radius: 7px;
+    font-weight: 700;
+}
+
+header ul li a:hover, 
+header ul li a.active{
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo{
+    width: 85vmin;
+    height: auto;
+    position: relative;
+    margin: 50px;
+    animation: img-animation 3.5s ease-in-out;
+}
+
+@keyframes img-animation{
+    0%{
+    transform: translateX(500%);
+    }
+    50%{
+        transform: translateX(0);
+    }
+}
+
+#judul{
+    position: relative;
+    display: grid;
+    justify-items: left;
+    white-space: nowrap;
+    z-index: 9;
+}
+
+#judul h1{
+    font-size: 5em;
+    animation: text-animation 2s ease-in-out;
+}
+
+#judul p{
+    font-size: 15pt;
+    color: slategrey;
+    animation: text-animation 2s ease-in-out;
+}
+
+@keyframes text-animation{
+    0%{
+    transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(0);
+    }
+}
+
+#judul p a{
+    text-decoration: none;
+    color: black;
+}
+
+#judul p a:hover{
+    text-decoration: underline;
+    color: slategrey;
+    transition: 0.5s;
+}
+
+.botton{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.cv a{
+    background-color: darkgray;
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    transition: background-color 0.5s ease-in-out;
+    opacity: 0;
+    animation: fade-in 3.5s ease-in-out forwards;
+}
+
+.por a{
+    background-color: rgb(1, 116, 231);
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    transition: background-color 0.5s ease-in-out;
+    opacity: 0;
+    animation: fade-in 2.5s ease-in-out forwards;
+}
+
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.por a:hover,
+.cv a:hover{
+    background-color: black;
+    color: white;
+    animation: pulse 1.5s ease-in-out infinite;
+    opacity: 1;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(5.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/* INI ADALAH BAGIAN PORTOFOLIO */
+.port{
+    position: relative;
+    display: block;
+    padding: 10;
+    margin: 0;
+    margin-top: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.port{
+    display: block;
+    padding: 10;
+    margin: 0;
+    margin-top: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.port1{
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin-top: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.port2{
+    height: 100vh;
+    display: fl ;
+}
+
+.about{ 
+    display: grid;
+    justify-items: center;
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 20pt;
+    text-align: left;
+}
+
+.about-content{
+    display: block;
+    align-items: center;
+}
+
+.bungkus-ket{
+    display: flex;
+    justify-content: center;
+}
+
+.port-img{
+    height: 90vh; 
+    display: block;
+    text-align: center;
+    border-bottom: solid 2px darkgray;
+}
+
+.pp{
+    width: 30vmin;
+    height: 30vmin;
+    border-radius: 400px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.keterangan{
+    color: rgb(111, 111,111);
+    margin: 0;
+    width: 70%;
+    align-items: center;
+    justify-content: center ;
+}
+
+.sosmed{
+    margin-top: 40px;
+}
+
+.sosmed img{
+    position: relative;
+    width: 30px;
+    height:30px;
+    mix-blend-mode: hard-light;
+    margin: 20px;
+}
+
+.sosmed img:hover{
+    transition: 1s;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.batas{
+    width: 300px;
+    height: 3px;
+    background-color: black;
+}
+
+.dapri img{
+    position: relative;
+    object-fit: cover;
+    height: 70vmin;
+    width: 60vmin;
+    padding: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.dapri{
+    position: relative;
+    margin: 50px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.dapri:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: flip 1s ease-in-out infinite;
+}
+
+.dapri-text{
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-left: 20px;
+    align-items: center;
+    text-align: left;
+}
+
+.dapri-text ul{
+    margin-right: 70px;
+}
+
+.dapri-text ul li{
+    list-style: none;
+    margin: 20px;
+    font-size: 12pt;
+}
+
+.port1 .about{
+    margin-top: 50px;
+    padding-top: 100px;
+}
+
+.kotak{
+    position: absolute;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.item{
+    margin: 40px;
+
+}
+
+.kotak img{
+    width: 200px;
+    height: 20vmin;
+    position: relative;
+}
+
+.kotak a{
+    text-decoration: none;
+    color: darkgray;
+    margin: 20px;
+}
+
+.kotak a:hover{
+    color: black;
+    font-size: 14pt;
+    transition: 1s;
+}
+
+fieldset {
+    display: flex;
+    padding: 0;
+    text-align: left;
+    margin: 10px;
+    background-color: whitesmoke;
+}
+
+.isi-form{
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    justify-content: left;
+}
+
+.tex-form{
+    width: 200px;
+}
+
+.isi{
+    width: 400px;
+}
+
+.isian{
+    margin: 10px;
+    padding: 10px;
+}
+
+.btn.daftar:hover{
+    background-color: rgb(1, 188, 1);
+}
+
+footer{
+    background-color: black;
+    margin-top: 250px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+footer p{
+    margin-bottom: 50px;
+}
+
+footer a{
+    color: darkgray;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+/* TRANSISI-TRANSISI */
