@@ -25,7 +25,7 @@
             <p>College Student of <a href="https://ua.ac.id/" target="_blank">Annuqayah University</a></p>
             <div class="botton">
                 <div class="cv">
-                    <a href="my cv.pdf" target="_blank">Show Curiculum Vetea >  </a>
+                    <a href="img/mycv.pdf" target="_blank">Show Curiculum Vetea >  </a>
                 </div>
                 <div class="por">
                     <a href="/portofolio">View Portofolio ></a>
