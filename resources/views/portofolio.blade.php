@@ -164,7 +164,7 @@
                             </div>
                             <div class="isi">
                                 <input type="radio" name="rd.lk" value="pria"> Laki-Laki <br>
-                                <input type="radio" name="rd.pr" value="wanita"> Perempuan <br>
+                                <input type="radio" name="rd.lk" value="wanita"> Perempuan <br>
                             </div>
                         </div>
 
@@ -244,7 +244,7 @@
         <p>Hak Cipta &copy; 2024 <a href="/home">Lutfan Syafiq</a> web kelas TI-B('22)</p>
         <div>
             <video width="300px" controls>
-            <source src="img/Rayon LTQ.mp4" type = "video/mp4">
+            <source src="img/ANNUQAYAH.mp4" type = "video/mp4">
         </video>
         <h2><a href="https://www.youtube.com/@ltqmurajaah8118">@LTQ_Murajaah : )</a></h2>
     </div>
