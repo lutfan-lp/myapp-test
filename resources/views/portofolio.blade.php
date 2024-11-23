@@ -241,12 +241,12 @@
     </section>
     
     <footer>
-        <p>Hak Cipta &copy; 2024 <a href="/home">Lutfan Syafiq</a> web kelas TI-B('22)</p>
+        <p>Hak Cipta &copy; 2024 <a href="/">Lutfan Syafiq</a> web kelas TI-B('22)</p>
         <div>
             <video width="300px" controls>
             <source src="img/ANNUQAYAH.mp4" type = "video/mp4">
         </video>
-        <h2><a href="https://www.youtube.com/@ltqmurajaah8118">@LTQ_Murajaah : )</a></h2>
+        <h2><a href="https://www.youtube.com/@ltqmurajaah8118">@LTQ_Murajah : )</a></h2>
     </div>
     </footer>
 </body>
